@@ -35,10 +35,14 @@ export const Contact = () => {
     const userID = 'lCE1ayCmsxDGQlx9c';  // Replace with your EmailJS user ID (or public key)
   
     // Prepare the form data to send
+    
+    const names = formDetails.firstName+" "+ formDetails.lastName
+    console.log(formDetails,names);
     const templateParams = {
-      name: formDetails.name,
+      name: names,
       email: formDetails.email,
       message: formDetails.message,
+      phone:formDetails.phone
     };
   
     try {
@@ -47,7 +51,7 @@ export const Contact = () => {
       
       setButtonText("Send");
       setFormDetails(formInitialDetails);
-  
+      
       // Handle success response
       if (response.status === 200) {
         setStatus({ success: true, message: 'Message sent successfully' });
@@ -85,7 +89,7 @@ export const Contact = () => {
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
