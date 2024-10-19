@@ -66,7 +66,7 @@ export const Skills = () => {
                   <h5>NestJS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter1} alt="Image" />
                   <h5>MongoDB</h5>
                 </div>
                 <div className="item">
