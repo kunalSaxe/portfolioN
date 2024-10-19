@@ -68,7 +68,7 @@ export const Projects = () => {
                         <Nav.Link
                           eventKey="third"
                           as="a"
-                          href="/public/KunalSaxenaResume.pdf"
+                          href="https://drive.google.com/file/d/1x-Lm-aIz3LdQ47rENDNuBZ70MqGMpK3A/view?usp=sharing"
                           download
                         >
                           Download Resume
