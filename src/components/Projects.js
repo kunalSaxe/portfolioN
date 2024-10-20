@@ -7,7 +7,7 @@ import glasskart from "../assets/img/glasskart.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-
+import KunalSaxenaResume from "../assets/resume/KunalSaxenaResume.pdf"
 export const Projects = () => {
   const projects = [
     {
@@ -68,7 +68,8 @@ export const Projects = () => {
                         <Nav.Link
                           eventKey="third"
                           as="a"
-                          href="./assets/resume/KunalSaxenaResume.pdf"
+                          href={KunalSaxenaResume} 
+                          type="application/pdf"
                           download
                         >
                           Download Resume
