@@ -68,7 +68,7 @@ export const Projects = () => {
                         <Nav.Link
                           eventKey="third"
                           as="a"
-                          href="/KunalSaxenaResume.pdf"
+                          href="./assets/resume/KunalSaxenaResume.pdf"
                           download
                         >
                           Download Resume

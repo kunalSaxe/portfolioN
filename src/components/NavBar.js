@@ -6,7 +6,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import KunalSaxenaResume from "../assets/resume/KunalSaxenaResume.pdf"
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -28,7 +28,15 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
-
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = KunalSaxenaResume;
+    link.setAttribute('download', 'KunalSaxenaResume.pdf');
+    link.setAttribute('type', 'application/pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); // Clean up after download
+  };
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -85,11 +93,11 @@ export const NavBar = () => {
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
-                <a href="/KunalSaxenaResume.pdf" download>
-                  <button className="vvd">
+                {/* <a  href="/src/assets/resume/KunalSaxenaResume.pdf" download> */}
+                  <button className="vvd" onClick={handleDownload} >
                     <span>My Resume</span>
                   </button>
-                </a>
+                {/* </a> */}
             </span>
           </Navbar.Collapse>
         </Container>
