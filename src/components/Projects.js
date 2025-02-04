@@ -53,35 +53,41 @@ export const Projects = () => {
                     using frameworks like NestJS, TypeORM, and Bootstrap.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Lets Connect</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link
-                          eventKey="third"
-                          as="a"
-                          href={KunalSaxenaResume} 
-                          type="application/pdf"
-                          download
-                        >
-                          Download Resume
-                        </Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
+  <Nav
+    variant="pills"
+    className="nav-pills mb-5 justify-content-center align-items-center flex-wrap"
+    id="pills-tab"
+  >
+    <Nav.Item>
+      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link eventKey="second">Let's Connect</Nav.Link>
+    </Nav.Item>
+    <Nav.Item>
+      <Nav.Link
+        eventKey="third"
+        as="a"
+        href={KunalSaxenaResume}
+        type="application/pdf"
+        download
+        className="btn btn-outline-primary"
+      >
+        Download Resume
+      </Nav.Link>
+    </Nav.Item>
+  </Nav>
+  
+  <Tab.Content
+    id="slideInUp"
+    className={
+      isVisible ? "animate__animated animate__slideInUp" : ""
+    }
+  >
+    {/* Tab contents go here */}
+  {/* </Tab.Content> */}
+
+
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {

@@ -1,0 +1,99 @@
+/* Updated Newsletter and Contact Form Styles */
+
+.newsletter-bx {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 10%;
+}
+
+.newsletter-bx h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    
+    background: #ff7eb3;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}
+
+.newsletter-form button:hover {
+    background: #ff477e;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    background: #ff7eb3;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #ff477e;
+}
+
+@media (max-width: 768px) {
+    .newsletter-bx,
+    .contact-form {
+        padding: 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
