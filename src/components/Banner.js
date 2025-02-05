@@ -14,8 +14,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [
     "Backend Developer",
-    "Data Engineer",
-    "Fullstack MERN Developer",
+    "Associate Data Engineer"
   ];
   const period = 2000;
 
@@ -74,24 +73,13 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                      data-rotate='[ "Web Developer", "Associate Dataengineer", "UI/UX Designer" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Motivated individual with in-depth knowledge of languages
-                    and development tools, seeking a position in a
-                    growth-oriented company. Proficient in C, C++, Python, HTML,
-                    CSS, JavaScript, Node JS, React JS, and MySQL. Completed a
-                    FullStack Developer internship with Numeric Infosystem Pvt
-                    Ltd, working on live projects. Experienced in creating
-                    websites, e-commerce platforms, and stock management
-                    systems. Pursuing BTech in Computer Science with a current
-                    CGPA of 6.6. Certified in C++ and Mern Stack Development.
-                    Fluent in English, Hindi, and French. Excellent
-                    interpersonal and organizational skills. Highly motivated,
-                    self-driven, and dedicated to continuous learning.
+                  Motivated individual with a strong foundation in development tools and data engineering, seeking a position in a growth-oriented company. Proficient in MySQL and experienced in building websites, e-commerce platforms, and stock management systems. Completed a Full Stack Developer internship with Numeric Infosystem Pvt Ltd, working on live projects. Successfully completed a data engineering project as a mutual fund broker, showcasing expertise in data processing and management. Pursuing BTech in Computer Science. Certified in MERN Stack Development. Fluent in English, Hindi, and French, with excellent interpersonal and organizational skills. Highly motivated, self-driven, and dedicated to continuous learning and growth in the field of data engineering.
                   </p>
                   <button
                     onClick={() => {
