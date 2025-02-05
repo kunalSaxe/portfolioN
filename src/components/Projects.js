@@ -59,7 +59,7 @@ export const Projects = () => {
     id="pills-tab"
   >
     <Nav.Item>
-      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+      <Nav.Link eventKey="first">Projects</Nav.Link>
     </Nav.Item>
     <Nav.Item>
       <Nav.Link eventKey="second">Let's Connect</Nav.Link>
@@ -96,22 +96,22 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="section">
-                        <p>
+                        {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
                           inventore debitis quo.
-                        </p>
+                        </p> */}
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
+                        {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
                           inventore debitis quo.
-                        </p>
+                        </p> */}
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
