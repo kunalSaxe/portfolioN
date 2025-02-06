@@ -50,7 +50,7 @@ export const Projects = () => {
                     A selection of projects showcasing my expertise in web
                     development, database management, and API integration.
                     Focused on delivering scalable and user-centric applications
-                    using frameworks like NestJS, TypeORM, and Bootstrap.
+                    using frameworks like NestJS, TypeORM, and Bootstrap..
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
   <Nav
